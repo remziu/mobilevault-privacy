@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MobileVault — Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f6efe2; --card: #fffdf8; --text: #201e1d; --muted: #7d7466;
+    --accent: #9a6e1b; --line: #e7ddc9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #171c26; --card: #1f2633; --text: #edede8; --muted: #9aa3b2; --accent: #d4a24e; --line: #2b3342; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 28px 30px; }
+  h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.22rem; margin: 34px 0 8px; color: var(--accent); }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  .lead { font-size: 1.05rem; }
+  .badge { display: inline-block; background: var(--accent); color: #fffdf8; font-weight: 600;
+    font-size: .8rem; padding: 4px 12px; border-radius: 999px; margin-bottom: 14px; letter-spacing: .02em; }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--line); margin: 46px 0; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  .foot { color: var(--muted); font-size: .85rem; margin-top: 28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+
+    <!-- ==================== TÜRKÇE ==================== -->
+    <div class="badge">Sıfır veri · Zero data</div>
+    <h1>MobileVault — Gizlilik Politikası</h1>
+    <p class="muted">Son güncelleme: 19 Temmuz 2026</p>
+
+    <p class="lead"><strong>MobileVault, tüm verilerinizi yalnızca cihazınızda saklayan bir
+    parola yöneticisidir.</strong> Uygulamanın internet izni dahi yoktur. Bu, hiçbir kodun
+    veya bağımlılığın verinizi bir sunucuya gönderemeyeceği anlamına gelen, işletim sistemi
+    düzeyinde bir güvencedir. Sizin hakkınızda hiçbir bilgi toplamıyor, saklamıyor veya
+    paylaşmıyoruz.</p>
+
+    <h2>Topladığımız kişisel veriler</h2>
+    <p><strong>Hiçbir kişisel veri toplamıyoruz.</strong> Parolalarınız, kullanıcı adlarınız,
+    notlarınız ve diğer tüm kayıtlarınız yalnızca cihazınızda kalır. Geliştiriciye, herhangi
+    bir sunucuya ya da üçüncü taraflara hiçbir veri iletilmez. Analitik, çökme raporlama veya
+    kullanım takibi yapılmaz.</p>
+
+    <h2>Verilerinizin paylaşımı</h2>
+    <p><strong>Hiçbir veri hiç kimseyle paylaşılmaz.</strong> Reklam yok, izleyici (tracker)
+    yok, üçüncü taraf reklam/analitik SDK'sı yok. Uygulamada kullanılan bileşenler yalnızca
+    cihaz üzerinde çalışan şifreleme ve depolama kütüphaneleridir.</p>
+
+    <h2>Verilerin saklanması ve güvenliği</h2>
+    <p>Kayıtlarınız cihazınızda, denetlenmiş modern şifreleme ile korunur:
+    anahtar türetme için <strong>Argon2id</strong>, şifreleme için
+    <strong>XChaCha20-Poly1305</strong>. Şifre çözme anahtarı yalnızca sizin ana parolanızdan
+    türetilir; ana parolanızı bilmeyiz ve verilerinize erişemeyiz. Ana parolanızı unutursanız
+    kimse — geliştirici dahil — verilerinize ulaşamaz.</p>
+
+    <h2>Kullanılan izinler</h2>
+    <ul>
+      <li><strong>Kamera:</strong> Yalnızca iki adımlı doğrulama (TOTP) QR kodunu
+      <em>cihaz üzerinde</em> okumak için kullanılır. Görüntü yerel olarak çözülür, ardından
+      atılır; hiçbir yere gönderilmez veya saklanmaz.</li>
+      <li><strong>Biyometrik / parmak izi:</strong> Yalnızca kasayı hızlı açmak için Android'in
+      biyometrik doğrulamasını kullanır. Biyometrik verileriniz Android işletim sistemi ve
+      donanım güvenli alanı tarafından yönetilir; uygulama bunlara <em>erişemez</em> ve bu
+      veriler cihazdan çıkmaz.</li>
+      <li><strong>İnternet izni YOKTUR.</strong> Uygulama ağa hiçbir biçimde erişemez.</li>
+    </ul>
+
+    <h2>Otomatik doldurma (isteğe bağlı)</h2>
+    <p>Otomatik doldurmayı siz etkinleştirdiğinizde, uygulama yalnızca <em>o an ekranda görünen
+    giriş formundaki</em> alan bilgilerini okuyarak kayıtlı parolanızı önerir veya yeni girişi
+    kaydetmeyi teklif eder. Bu işlemlerin tamamı cihaz üzerinde gerçekleşir; hiçbir form verisi
+    veya parola cihazdan dışarı çıkmaz. Otomatik doldurma tamamen isteğe bağlıdır.</p>
+
+    <h2>Pano (kopyalama) koruması</h2>
+    <p>Bir parolayı kopyaladığınızda, kopyalanan sır belirlediğiniz süre sonunda panodan
+    otomatik olarak silinir. Ekran görüntüsü ve ekran kaydı tüm hassas ekranlarda engellidir.</p>
+
+    <h2>Yedekleme (isteğe bağlı)</h2>
+    <p>Dilerseniz <strong>şifreli</strong> bir yedek dosyası oluşturup, seçtiğiniz konuma
+    (örneğin kendi bulut hesabınız) kaydedebilirsiniz. Bu tamamen sizin kontrolünüzdedir; yedek
+    şifrelidir ve yalnızca sizin belirlediğiniz parolayla açılır. Yedeği nereye kaydedeceğinize
+    yalnızca siz karar verirsiniz.</p>
+
+    <h2>Verilerin silinmesi</h2>
+    <p>Uygulamayı kaldırmak veya uygulama içindeki "kasayı yok et" seçeneğini kullanmak tüm
+    verilerinizi kalıcı olarak siler. Geliştiricide hiçbir kopya bulunmadığından başka bir
+    işleme gerek yoktur.</p>
+
+    <h2>Çocukların gizliliği</h2>
+    <p>Uygulama hiçbir kişisel veri toplamaz ve her yaş için uygundur.</p>
+
+    <h2>Bu politikadaki değişiklikler</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler bu sayfada
+    yayımlanır ve yukarıdaki "Son güncelleme" tarihi değiştirilir.</p>
+
+    <h2>İletişim</h2>
+    <p>Bu politika veya gizlilikle ilgili sorularınız için:
+    <a href="mailto:ustaremzii@gmail.com">ustaremzii@gmail.com</a></p>
+
+    <hr>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <div class="badge">Zero data · No tracking</div>
+    <h1>MobileVault — Privacy Policy</h1>
+    <p class="muted">Last updated: July 19, 2026</p>
+
+    <p class="lead"><strong>MobileVault is a password manager that keeps all your data only on
+    your device.</strong> The app does not even hold the INTERNET permission — an operating-system
+    level guarantee that no code or dependency can send your data to any server. We do not
+    collect, store, or share any information about you.</p>
+
+    <h2>Personal data we collect</h2>
+    <p><strong>We collect no personal data.</strong> Your passwords, usernames, notes, and all
+    other entries remain only on your device. Nothing is transmitted to the developer, to any
+    server, or to third parties. There is no analytics, crash reporting, or usage tracking.</p>
+
+    <h2>Data sharing</h2>
+    <p><strong>No data is shared with anyone.</strong> No ads, no trackers, no third-party
+    advertising or analytics SDKs. The components used by the app are on-device encryption and
+    storage libraries only.</p>
+
+    <h2>Storage &amp; security</h2>
+    <p>Your entries are protected on your device with audited modern cryptography:
+    <strong>Argon2id</strong> for key derivation and <strong>XChaCha20-Poly1305</strong> for
+    encryption. The decryption key is derived solely from your master password, which we never
+    know and cannot access. If you forget your master password, no one — including the developer
+    — can recover your data.</p>
+
+    <h2>Permissions used</h2>
+    <ul>
+      <li><strong>Camera:</strong> Used only to read a two-factor (TOTP) QR code
+      <em>on device</em>. The image is decoded locally and then discarded; it is never uploaded
+      or stored.</li>
+      <li><strong>Biometric / fingerprint:</strong> Used only to quickly unlock the vault via
+      Android's biometric authentication. Your biometric data is managed by the Android OS and
+      the device's secure hardware; the app <em>cannot</em> access it and it never leaves the
+      device.</li>
+      <li><strong>NO INTERNET permission.</strong> The app cannot access the network in any way.</li>
+    </ul>
+
+    <h2>Autofill (optional)</h2>
+    <p>When you enable autofill, the app reads only the field information of the login form
+    <em>currently on screen</em> to suggest your saved password or offer to save a new entry.
+    All of this happens on device; no form data or password ever leaves the device. Autofill is
+    entirely optional.</p>
+
+    <h2>Clipboard protection</h2>
+    <p>When you copy a password, the copied secret is automatically cleared from the clipboard
+    after a delay you choose. Screenshots and screen recording are blocked on all sensitive
+    screens.</p>
+
+    <h2>Backups (optional)</h2>
+    <p>You may create an <strong>encrypted</strong> backup file and save it to a location you
+    choose (for example, your own cloud account). This is entirely under your control; the
+    backup is encrypted and opens only with a password you set. Only you decide where it is
+    stored.</p>
+
+    <h2>Data deletion</h2>
+    <p>Uninstalling the app or using the in-app "destroy vault" option permanently deletes all
+    your data. Since the developer holds no copy, nothing else is required.</p>
+
+    <h2>Children's privacy</h2>
+    <p>The app collects no personal data and is suitable for all ages.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>This privacy policy may be updated from time to time. Material changes are posted on this
+    page and the "Last updated" date above is revised.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this policy or your privacy:
+    <a href="mailto:ustaremzii@gmail.com">ustaremzii@gmail.com</a></p>
+
+    <p class="foot">MobileVault — bağımsız bir geliştirici tarafından sunulur / provided by an
+    independent developer.</p>
+  </div>
+</div>
+</body>
+</html>
